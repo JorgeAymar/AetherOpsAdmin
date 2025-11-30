@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: aetherops-admin
+    restart: always
+    ports:
+      - "5001:5001"
+    environment:
+      - NODE_ENV=production
+      - PORT=5001
