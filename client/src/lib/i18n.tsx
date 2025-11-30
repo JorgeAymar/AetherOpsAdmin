@@ -31,22 +31,22 @@ interface Translations {
         title: string;
         subtitle: string;
         items: {
-            scaling: {
+            ai_admin: {
                 title: string;
                 description: string;
                 value: string;
             };
-            security: {
+            diagnosis: {
                 title: string;
                 description: string;
                 value: string;
             };
-            freedom: {
+            voice_deploy: {
                 title: string;
                 description: string;
                 value: string;
             };
-            clarity: {
+            auto_security: {
                 title: string;
                 description: string;
                 value: string;
@@ -133,9 +133,9 @@ const translations: Record<Language, Translations> = {
             pricing: "View Pricing",
         },
         hero: {
-            title: "Manage your VPS services",
+            title: "Manage your VPS environments",
             title_highlight: "without being present.",
-            subtitle: "Your AI crew handles your Linux Ubuntu servers. No SysAdmin needed. Enjoy the freedom of autonomous infrastructure with built-in best practices.",
+            subtitle: "The perfect solution for startups and digital creators. Your AI crew manages your Linux Ubuntu VPS environments—no SysAdmin required. Maintain full control with autonomous infrastructure.",
             cta_primary: "Get Started",
             cta_secondary: "View Pricing & Plans",
         },
@@ -153,25 +153,25 @@ const translations: Record<Language, Translations> = {
             title: "Transform Your Reality",
             subtitle: "AetherOps isn't just a tool; it's a lifestyle design enabler. Bridge the gap between high-performance business and personal freedom.",
             items: {
-                scaling: {
-                    title: "Effortless Scaling",
-                    description: "Grow your infrastructure without growing your workload. AetherOps handles the complexity so you can focus on vision.",
-                    value: "Startup Benefit: Zero technical debt.",
+                ai_admin: {
+                    title: "AI-Based Administration & Monitoring",
+                    description: "Your AI crew manages, monitors, and scales your infrastructure 24/7. It's like having a dedicated SysAdmin team that never sleeps.",
+                    value: "Benefit: Continuous expert management.",
                 },
-                security: {
-                    title: "Fortress Security",
-                    description: "Sleep soundly knowing your digital empire is guarded by autonomous sentinels that never sleep.",
-                    value: "Startup Benefit: Enterprise-grade protection.",
+                diagnosis: {
+                    title: "Proactive Diagnosis & Improvement",
+                    description: "Detects issues before they happen and suggests improvements automatically. Advanced algorithms ensure peak performance.",
+                    value: "Benefit: Self-healing infrastructure.",
                 },
-                freedom: {
-                    title: "True Freedom",
-                    description: "The ultimate luxury is time. Disconnect completely, knowing your Ubuntu systems are self-healing and self-documenting.",
-                    value: "Life Benefit: Work from anywhere, or nowhere.",
+                voice_deploy: {
+                    title: "Chat & Voice Deployment",
+                    description: "Deploy apps and manage servers simply by talking or chatting with your AI. No complex CLI commands needed.",
+                    value: "Benefit: Zero-friction operations.",
                 },
-                clarity: {
-                    title: "Mental Clarity",
-                    description: "Eliminate the low-level noise of server management. Reclaim your cognitive bandwidth for high-leverage decisions.",
-                    value: "Life Benefit: Deep focus and peace of mind.",
+                auto_security: {
+                    title: "Autonomous Security",
+                    description: "Enterprise-grade security protocols applied and updated automatically. Your data remains impenetrable against new threats.",
+                    value: "Benefit: Enterprise-grade protection.",
                 },
             },
         },
@@ -270,9 +270,9 @@ const translations: Record<Language, Translations> = {
             pricing: "Ver Precios",
         },
         hero: {
-            title: "Gestiona tus servicios VPS",
+            title: "Gestiona tus entornos VPS",
             title_highlight: "sin estar presente.",
-            subtitle: "Tu equipo de IA gestiona tus servidores Linux Ubuntu. No necesitas SysAdmin. Disfruta de la libertad de una infraestructura autónoma.",
+            subtitle: "La solución ideal para startups y emprendedores digitales. Tu equipo de IA gestiona tus entornos VPS Linux Ubuntu—sin necesidad de SysAdmin. Mantén el control total con una infraestructura autónoma.",
             cta_primary: "Empezar",
             cta_secondary: "Ver Precios y Planes",
         },
@@ -290,25 +290,25 @@ const translations: Record<Language, Translations> = {
             title: "Transforma Tu Realidad",
             subtitle: "AetherOps no es solo una herramienta; es un facilitador de diseño de vida. Une el alto rendimiento empresarial con la libertad personal.",
             items: {
-                scaling: {
-                    title: "Escalado Sin Esfuerzo",
-                    description: "Haz crecer tu infraestructura sin aumentar tu carga de trabajo. AetherOps maneja la complejidad para que puedas enfocarte en la visión.",
-                    value: "Beneficio Startup: Cero deuda técnica.",
+                ai_admin: {
+                    title: "Administración y Monitoreo con IA",
+                    description: "Tu equipo de IA gestiona, monitorea y escala tu infraestructura 24/7. Es como tener un equipo SysAdmin dedicado que nunca duerme.",
+                    value: "Beneficio: Gestión experta continua.",
                 },
-                security: {
-                    title: "Seguridad Fortaleza",
-                    description: "Duerme tranquilo sabiendo que tu imperio digital está protegido por centinelas autónomos que nunca duermen.",
-                    value: "Beneficio Startup: Protección de grado empresarial.",
+                diagnosis: {
+                    title: "Diagnóstico y Mejora Proactiva",
+                    description: "Detecta problemas antes de que ocurran y sugiere mejoras automáticamente. Algoritmos avanzados aseguran el máximo rendimiento.",
+                    value: "Beneficio: Infraestructura auto-reparable.",
                 },
-                freedom: {
-                    title: "Verdadera Libertad",
-                    description: "El lujo definitivo es el tiempo. Desconéctate completamente, sabiendo que tus sistemas Ubuntu se auto-reparan.",
-                    value: "Beneficio de Vida: Trabaja desde cualquier lugar, o ninguno.",
+                voice_deploy: {
+                    title: "Despliegue por Chat y Voz",
+                    description: "Despliega apps y gestiona servidores simplemente hablando o chateando con tu IA. Sin comandos CLI complejos.",
+                    value: "Beneficio: Operaciones sin fricción.",
                 },
-                clarity: {
-                    title: "Claridad Mental",
-                    description: "Elimina el ruido de bajo nivel de la gestión de servidores. Recupera tu ancho de banda cognitivo para decisiones de alto impacto.",
-                    value: "Beneficio de Vida: Enfoque profundo y paz mental.",
+                auto_security: {
+                    title: "Seguridad Autónoma",
+                    description: "Protocolos de seguridad empresarial aplicados y actualizados automáticamente. Tus datos permanecen impenetrables ante nuevas amenazas.",
+                    value: "Beneficio: Protección de grado empresarial.",
                 },
             },
         },
@@ -407,9 +407,9 @@ const translations: Record<Language, Translations> = {
             pricing: "Ver Preços",
         },
         hero: {
-            title: "Gerencie seus serviços VPS",
+            title: "Gerencie seus ambientes VPS",
             title_highlight: "sem estar presente.",
-            subtitle: "Sua equipe de IA cuida dos seus servidores Linux Ubuntu. Sem SysAdmin. Aproveite a liberdade de uma infraestrutura autônoma.",
+            subtitle: "A solução ideal para startups e empreendedores digitais. Sua equipe de IA gerencia seus ambientes VPS Linux Ubuntu—sem necessidade de SysAdmin. Mantenha controle total com infraestrutura autônoma.",
             cta_primary: "Começar",
             cta_secondary: "Ver Preços e Planos",
         },
@@ -427,25 +427,25 @@ const translations: Record<Language, Translations> = {
             title: "Transforme Sua Realidade",
             subtitle: "AetherOps não é apenas uma ferramenta; é um facilitador de estilo de vida. Una o alto desempenho empresarial com a liberdade pessoal.",
             items: {
-                scaling: {
-                    title: "Escalonamento Sem Esforço",
-                    description: "Cresça sua infraestrutura sem aumentar sua carga de trabalho. AetherOps lida com a complexidade para que você possa focar na visão.",
-                    value: "Benefício Startup: Zero dívida técnica.",
+                ai_admin: {
+                    title: "Administração e Monitoramento com IA",
+                    description: "Sua equipe de IA gerencia, monitora e escala sua infraestrutura 24/7. É como ter uma equipe SysAdmin dedicada que nunca dorme.",
+                    value: "Benefício: Gestão especializada contínua.",
                 },
-                security: {
-                    title: "Segurança Fortaleza",
-                    description: "Durma tranquilo sabendo que seu império digital está protegido por sentinelas autônomas que nunca dormem.",
-                    value: "Benefício Startup: Proteção de nível empresarial.",
+                diagnosis: {
+                    title: "Diagnóstico e Melhoria Proativa",
+                    description: "Detecta problemas antes que aconteçam e sugere melhorias automaticamente. Algoritmos avançados garantem desempenho máximo.",
+                    value: "Benefício: Infraestrutura auto-reparável.",
                 },
-                freedom: {
-                    title: "Verdadeira Liberdade",
-                    description: "O luxo definitivo é o tempo. Desconecte-se completamente, sabendo que seus sistemas Ubuntu se auto-reparan.",
-                    value: "Benefício de Vida: Trabalhe de qualquer lugar, ou de lugar nenhum.",
+                voice_deploy: {
+                    title: "Deploy via Chat e Voz",
+                    description: "Implante apps e gerencie servidores simplesmente falando ou conversando com sua IA. Sem comandos CLI complexos.",
+                    value: "Benefício: Operações sem atrito.",
                 },
-                clarity: {
-                    title: "Clareza Mental",
-                    description: "Elimine o ruído de baixo nível do gerenciamento de servidores. Recupere sua largura de banda cognitiva para decisões de alto impacto.",
-                    value: "Benefício de Vida: Foco profundo e paz de espírito.",
+                auto_security: {
+                    title: "Segurança Autônoma",
+                    description: "Protocolos de segurança empresarial aplicados e atualizados automaticamente. Seus dados permanecem impenetráveis contra novas ameaças.",
+                    value: "Benefício: Proteção de nível empresarial.",
                 },
             },
         },
@@ -544,9 +544,9 @@ const translations: Record<Language, Translations> = {
             pricing: "Voir les Prix",
         },
         hero: {
-            title: "Gérez vos services VPS",
+            title: "Gérez vos environnements VPS",
             title_highlight: "sans être présent.",
-            subtitle: "Votre équipe d'IA gère vos serveurs Linux Ubuntu. Pas besoin d'administrateur. Profitez de la liberté d'une infrastructure autonome.",
+            subtitle: "La solution idéale pour les startups et les créateurs numériques. Votre équipe d'IA gère vos environnements VPS Linux Ubuntu—aucun administrateur requis. Gardez un contrôle total avec une infrastructure autonome.",
             cta_primary: "Commencer",
             cta_secondary: "Voir Prix et Plans",
         },
@@ -564,25 +564,25 @@ const translations: Record<Language, Translations> = {
             title: "Transformez Votre Réalité",
             subtitle: "AetherOps n'est pas seulement un outil; c'est un facilitateur de style de vie. Comblez le fossé entre la haute performance commerciale et la liberté personnelle.",
             items: {
-                scaling: {
-                    title: "Mise à l'Échelle Sans Effort",
-                    description: "Développez votre infrastructure sans augmenter votre charge de travail. AetherOps gère la complexité pour que vous puissiez vous concentrer sur la vision.",
-                    value: "Avantage Startup: Zéro dette technique.",
+                ai_admin: {
+                    title: "Administration et Surveillance par IA",
+                    description: "Votre équipe IA gère, surveille et fait évoluer votre infrastructure 24/7. C'est comme avoir une équipe d'administrateurs système dédiée qui ne dort jamais.",
+                    value: "Avantage: Gestion experte continue.",
                 },
-                security: {
-                    title: "Sécurité Forteresse",
-                    description: "Dormez sur vos deux oreilles en sachant que votre empire numérique est gardé par des sentinelles autonomes qui ne dorment jamais.",
-                    value: "Avantage Startup: Protection de niveau entreprise.",
+                diagnosis: {
+                    title: "Diagnostic et Amélioration Proactive",
+                    description: "Détecte les problèmes avant qu'ils ne surviennent et suggère des améliorations automatiquement. Des algorithmes avancés assurent des performances optimales.",
+                    value: "Avantage: Infrastructure auto-réparatrice.",
                 },
-                freedom: {
-                    title: "Vraie Liberté",
-                    description: "Le luxe ultime est le temps. Déconnectez-vous complètement, sachant que vos systèmes Ubuntu s'auto-réparent.",
-                    value: "Avantage Vie: Travaillez de n'importe où, ou de nulle part.",
+                voice_deploy: {
+                    title: "Déploiement par Chat et Voix",
+                    description: "Déployez des apps et gérez des serveurs simplement en parlant ou en discutant avec votre IA. Pas de commandes CLI complexes.",
+                    value: "Avantage: Opérations sans friction.",
                 },
-                clarity: {
-                    title: "Clarté Mentale",
-                    description: "Éliminez le bruit de bas niveau de la gestion des serveurs. Récupérez votre bande passante cognitive pour des décisions à fort impact.",
-                    value: "Avantage Vie: Concentration profonde et tranquillité d'esprit.",
+                auto_security: {
+                    title: "Sécurité Autonome",
+                    description: "Protocoles de sécurité d'entreprise appliqués et mis à jour automatiquement. Vos données restent impénétrables face aux nouvelles menaces.",
+                    value: "Avantage: Protection de niveau entreprise.",
                 },
             },
         },

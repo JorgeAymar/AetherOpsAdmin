@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Server, ShieldCheck, Activity } from "lucide-react";
-import ZenSystemVisual from "./ZenSystemVisual";
+import zenStonesImg from "@/assets/images/zen_stones.jpg";
 import { useLanguage } from "@/lib/i18n";
 
 const stats = [
@@ -13,7 +13,7 @@ export default function Philosophy() {
   const { t } = useLanguage();
 
   return (
-    <section id="philosophy" className="py-24 bg-background relative overflow-hidden">
+    <section id="philosophy" className="py-24 bg-muted/30 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
@@ -53,7 +53,11 @@ export default function Philosophy() {
             className="relative"
           >
             <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-30 pointer-events-none" />
-            <ZenSystemVisual />
+            <img
+              src={zenStonesImg}
+              alt="Zen Philosophy"
+              className="w-full h-[500px] object-cover rounded-2xl shadow-2xl relative z-10"
+            />
           </motion.div>
         </div>
       </div>

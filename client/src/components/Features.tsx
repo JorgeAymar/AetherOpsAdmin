@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 import workspaceImg from "@/assets/images/workspace_zen.jpg";
 import sailingImg from "@/assets/images/sailing_zen.jpg";
-import bestPracticesImg from "@/assets/images/zen_stones.jpg";
+import diagnosisImg from "@/assets/images/network_flow.jpg";
+import securityImg from "@/assets/images/security_shield.jpg";
 import { useLanguage } from "@/lib/i18n";
 
 function ActivityIcon(props: any) {
@@ -32,40 +33,40 @@ export default function Features() {
 
   const features = [
     {
-      id: "scaling",
-      title: t.features.items.scaling.title,
-      description: t.features.items.scaling.description,
-      value: t.features.items.scaling.value,
-      integrations: ["Auto-Scaling", "Load Balancing", "Optimization"],
+      id: "ai_admin",
+      title: t.features.items.ai_admin.title,
+      description: t.features.items.ai_admin.description,
+      value: t.features.items.ai_admin.value,
+      integrations: ["24/7 Monitoring", "Auto-Scaling", "Performance Tuning"],
       icon: Zap,
       image: workspaceImg,
     },
     {
-      id: "security",
-      title: t.features.items.security.title,
-      description: t.features.items.security.description,
-      value: t.features.items.security.value,
-      integrations: ["Auto-Patching", "Threat Detection", "Compliance"],
+      id: "diagnosis",
+      title: t.features.items.diagnosis.title,
+      description: t.features.items.diagnosis.description,
+      value: t.features.items.diagnosis.value,
+      integrations: ["Root Cause Analysis", "Proactive Fixes", "Health Checks"],
       icon: Shield,
-      image: bestPracticesImg,
+      image: diagnosisImg,
     },
     {
-      id: "freedom",
-      title: t.features.items.freedom.title,
-      description: t.features.items.freedom.description,
-      value: t.features.items.freedom.value,
-      integrations: ["Remote Monitoring", "Mobile Alerts", "Self-Healing"],
+      id: "voice_deploy",
+      title: t.features.items.voice_deploy.title,
+      description: t.features.items.voice_deploy.description,
+      value: t.features.items.voice_deploy.value,
+      integrations: ["Voice Commands", "Chat Interface", "Instant Deploy"],
       icon: Cloud,
       image: sailingImg,
     },
     {
-      id: "clarity",
-      title: t.features.items.clarity.title,
-      description: t.features.items.clarity.description,
-      value: t.features.items.clarity.value,
-      integrations: ["No Notifications", "Auto-Reports", "Zen Mode"],
+      id: "auto_security",
+      title: t.features.items.auto_security.title,
+      description: t.features.items.auto_security.description,
+      value: t.features.items.auto_security.value,
+      integrations: ["Auto-Patching", "Threat Blocking", "Compliance"],
       icon: ActivityIcon,
-      image: bestPracticesImg,
+      image: securityImg,
     },
   ];
 
