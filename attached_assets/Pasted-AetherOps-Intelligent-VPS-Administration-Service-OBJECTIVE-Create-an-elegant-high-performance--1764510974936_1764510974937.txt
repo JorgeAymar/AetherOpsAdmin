@@ -1,0 +1,177 @@
+AetherOps - Intelligent VPS Administration Service
+
+OBJECTIVE: Create an elegant, high-performance, and functional website for "AetherOps," a new generation AIOps service that provides autonomous monitoring, predictive correction, and advanced security hardening for Virtual Private Servers (VPS) and cloud infrastructure fleets.
+
+DESIGN AND AESTHETICS
+
+Color Palette:
+
+Primary Background: Matte Black (#1C1C1C) - For a sophisticated, high-tech foundation.
+
+Primary Accent: Soft Gold (#D4AF37) - For CTAs, logos, and focal highlights.
+
+Secondary Background/Text: Cream White (#FFFEF7) - For high contrast and elegance.
+
+Secondary Accent (Tech/Depth): Deep Teal (#004D40) - For status indicators and section highlights.
+
+Typography: Elegant Serif for all major titles (e.g., Playfair Display style) and a clean, legible Sans-Serif for body text and technical details.
+
+Imagery: Use abstract AI graphics, polished dashboard mockups, sophisticated network diagrams, and high-quality placeholder images of data centers/technology (use Unsplash placeholders).
+
+Interaction: Smooth, subtle fade-in and slide-up animations on scroll for content sections. Generous padding and spacing to ensure a clean, premium, and breathable layout.
+
+WEBSITE SECTIONS (English Content Mandatory)
+
+1. HERO SECTION (Above the fold)
+
+Visuals: Fullscreen background image of an abstract AI network, a futuristic server room, or a clean dashboard screenshot. Apply a subtle dark overlay (50% opacity).
+
+Main Title (Elegant Serif, Large): "Autonomous Infrastructure. Predictive Correction."
+
+Subtitle (Sans-Serif): "AetherOps agents deliver AIOps for flawless VPS performance and zero-downtime operations."
+
+Call-to-Action Buttons (CTAs):
+
+"Request a Demo" (Primary, Soft Gold fill)
+
+"View Pricing & Plans" (Secondary, White outline)
+
+Element: Animated scroll indicator at the bottom.
+
+Header: Fixed navigation bar that subtly reduces in height upon scrolling.
+
+2. AIOPS PHILOSOPHY / HOW IT WORKS
+
+Layout: Two-column design: Text summary on the left, an animated system diagram or a video player placeholder on the right.
+
+Content:
+
+Title: "Beyond Automation: The Power of AetherOps"
+
+Description: Explain the transition from traditional RMM to AIOps. Focus on Machine Learning for anomaly detection and Autonomous Remediation.
+
+Key Metrics (Below main content): Display three impressive statistics with corresponding icons:
+
+"Managed Cores" (e.g., 500k+)
+
+"Incidents Resolved Autonomously" (e.g., 95%)
+
+"Average Uptime Improvement" (e.g., +15%)
+
+3. CORE FEATURES (The Interactive Menu equivalent)
+
+Design: Use tabs or prominent buttons for four key modules.
+
+Modules/Tabs: 1. Predictive Monitoring / 2. Autonomous Remediation / 3. Advanced Security Hardening / 4. Compliance & Reporting.
+
+Content Structure (for each module):
+
+Feature Name (Highlighted Serif)
+
+Technical Description (Brief, precise explanation of the ML/Agent mechanism)
+
+Value Proposition (Why this benefits the client: e.g., "Reduce Mean Time To Resolution (MTTR) by 80%")
+
+Key Benefits/Integrations (Use icons: AWS, Azure, Google Cloud, Docker, Kubernetes compatibility).
+
+CTA: "Download AIOps Whitepaper" (PDF icon).
+
+4. SUCCESS STORIES (The Gallery equivalent)
+
+Visuals: Grid layout (3 columns desktop, 1 column mobile) showcasing:
+
+Product screenshots of the alert dashboard.
+
+Abstract representations of secure networks.
+
+Diagrams illustrating the "before AetherOps" vs. "after AetherOps" performance.
+
+Interaction: Lightbox functionality on image click. Subtle hover effect (light zoom + Gold border).
+
+5. REQUEST A DEMO (The Reservation System equivalent)
+
+Design: Prominent form card with a Cream White background, placed over a subtle, dark background image (e.g., a server room).
+
+Title: "Experience Autonomous Operations"
+
+Form Fields (Required):
+
+Full Name
+
+Company Name
+
+VPS Fleet Size (Dropdown: 1-10, 11-50, 50-200, 200+)
+
+Primary Challenge (Dropdown: High MTTR, Security Incidents, Scaling Issues, Cost Optimization)
+
+Email Address
+
+Phone Number
+
+Preferred Demo Date/Time (Calendar picker)
+
+Comments/Specific Needs (Optional, Textarea)
+
+Button: "Schedule Consultation" (Soft Gold fill, animated hover state).
+
+Confirmation: Display an elegant success message/modal upon submission.
+
+Alternative: "Call Sales Team" button with click-to-call number.
+
+6. CLIENT TESTIMONIALS
+
+Design: Automatic scrolling carousel (3-4 testimonials).
+
+Testimonial Card Structure:
+
+Quote Text (2-3 lines, highlighted)
+
+Client Name & Title (e.g., "VP of Infrastructure, TechCorp")
+
+Star Rating (5 Soft Gold stars)
+
+Client Avatar/Logo (Placeholder or default avatar)
+
+CTA: "Read All Case Studies"
+
+7. CONTACT & GLOBAL REACH
+
+Visuals: Placeholder for an interactive map showing global data center locations (or office locations).
+
+Contact Information (Organized):
+
+Corporate Address (with icon)
+
+Sales Phone (Clickable, with icon)
+
+Support Email (with icon)
+
+Service Hours: 24/7/365 (Highlighted)
+
+Links: Social Media icons (Instagram, LinkedIn, X/Twitter, WhatsApp) in Soft Gold.
+
+8. FOOTER
+
+Background: Dark Matte Black (#1C1C1C).
+
+Layout (3 Columns Desktop):
+
+Brand: Logo and a brief tagline ("AIOps. Simplified.").
+
+Quick Links: Home, Features, Pricing, Demo, Security.
+
+Newsletter: Sign up form: "Subscribe for AIOps Insights & Whitepapers."
+
+Bottom Bar: Copyright, "Designed by [Your Name]," and icons for accepted payment methods (e.g., Visa, Mastercard, AMEX if applicable for service subscription).
+
+TECHNICAL REQUIREMENTS (Keep from original)
+
+Responsiveness: 100% responsive, mobile-first design.
+
+Navigation: Mobile menu must use an animated hamburger icon.
+
+Interaction: Smooth scrolling between sections. Hover states on all interactive elements.
+
+Performance: Lazy loading for all images. Optimized assets for fast loading.
+
+Mobile Experience: Larger touch targets for CTAs. Full-width forms on mobile.
