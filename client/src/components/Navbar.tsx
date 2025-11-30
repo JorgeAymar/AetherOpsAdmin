@@ -3,10 +3,13 @@ import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/lib/i18n";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,10 +20,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Philosophy", href: "#philosophy" },
-    { name: "Features", href: "#features" },
-    { name: "Success Stories", href: "#success" },
-    { name: "Testimonials", href: "#testimonials" },
+    { name: t.nav.philosophy, href: "#philosophy" },
+    { name: t.nav.features, href: "#features" },
+    { name: t.nav.success, href: "#success" },
+    { name: t.nav.testimonials, href: "#testimonials" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -33,9 +36,8 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/90 backdrop-blur-md py-4 shadow-md" : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/90 backdrop-blur-md py-4 shadow-md" : "bg-transparent py-6"
+        }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -56,21 +58,25 @@ export default function Navbar() {
               {link.name}
             </button>
           ))}
-          <Button 
+          <LanguageSwitcher />
+          <Button
             onClick={() => scrollToSection("#pricing")}
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
           >
-            View Pricing
+            {t.nav.pricing}
           </Button>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-foreground"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <LanguageSwitcher />
+          <button
+            className="text-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -92,11 +98,11 @@ export default function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <Button 
+              <Button
                 onClick={() => scrollToSection("#pricing")}
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                View Pricing
+                {t.nav.pricing}
               </Button>
             </div>
           </motion.div>

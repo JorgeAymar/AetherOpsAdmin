@@ -1,43 +1,12 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Cloud, Shield, Zap, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 
-const features = [
-  {
-    id: "monitoring",
-    title: "Predictive Monitoring",
-    description: "Our agents analyze thousands of metrics per second, identifying subtle patterns that precede failure.",
-    value: "Detects 99.9% of potential outages before they impact users.",
-    integrations: ["Prometheus", "Datadog", "CloudWatch"],
-    icon: ActivityIcon,
-  },
-  {
-    id: "remediation",
-    title: "Autonomous Remediation",
-    description: "Self-healing infrastructure that automatically executes verified fixes for known issues.",
-    value: "Reduces Mean Time To Resolution (MTTR) by 80%.",
-    integrations: ["Ansible", "Terraform", "SaltStack"],
-    icon: Zap,
-  },
-  {
-    id: "security",
-    title: "Security Hardening",
-    description: "Continuous vulnerability scanning and automated patch management for zero-day threats.",
-    value: "Ensures 100% compliance with CIS benchmarks.",
-    integrations: ["CrowdStrike", "SentinelOne", "Wazuh"],
-    icon: Shield,
-  },
-  {
-    id: "compliance",
-    title: "Compliance & Reporting",
-    description: "Automated audit trails and compliance reporting for GDPR, HIPAA, and SOC2.",
-    value: "Saves 20+ hours per week on manual reporting.",
-    integrations: ["Splunk", "ELK Stack", "Grafana"],
-    icon: BarChart3,
-  },
-];
+import workspaceImg from "@/assets/images/workspace_zen.jpg";
+import sailingImg from "@/assets/images/sailing_zen.jpg";
+import bestPracticesImg from "@/assets/images/zen_stones.jpg";
+import { useLanguage } from "@/lib/i18n";
 
 function ActivityIcon(props: any) {
   return (
@@ -59,74 +28,107 @@ function ActivityIcon(props: any) {
 }
 
 export default function Features() {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      id: "scaling",
+      title: t.features.items.scaling.title,
+      description: t.features.items.scaling.description,
+      value: t.features.items.scaling.value,
+      integrations: ["Auto-Scaling", "Load Balancing", "Optimization"],
+      icon: Zap,
+      image: workspaceImg,
+    },
+    {
+      id: "security",
+      title: t.features.items.security.title,
+      description: t.features.items.security.description,
+      value: t.features.items.security.value,
+      integrations: ["Auto-Patching", "Threat Detection", "Compliance"],
+      icon: Shield,
+      image: bestPracticesImg,
+    },
+    {
+      id: "freedom",
+      title: t.features.items.freedom.title,
+      description: t.features.items.freedom.description,
+      value: t.features.items.freedom.value,
+      integrations: ["Remote Monitoring", "Mobile Alerts", "Self-Healing"],
+      icon: Cloud,
+      image: sailingImg,
+    },
+    {
+      id: "clarity",
+      title: t.features.items.clarity.title,
+      description: t.features.items.clarity.description,
+      value: t.features.items.clarity.value,
+      integrations: ["No Notifications", "Auto-Reports", "Zen Mode"],
+      icon: ActivityIcon,
+      image: bestPracticesImg,
+    },
+  ];
+
   return (
-    <section id="features" className="py-24 bg-background/50">
+    <section id="features" className="py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-foreground mb-4">Core Modules</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            A complete suite of intelligent tools designed to autonomously manage your infrastructure.
+        <div className="text-center mb-24">
+          <h2 className="text-5xl font-serif font-bold text-foreground mb-6">{t.features.title}</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-xl font-light leading-relaxed">
+            {t.features.subtitle}
           </p>
         </div>
 
-        <Tabs defaultValue="monitoring" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 bg-card/50 p-1 h-auto mb-8">
-            {features.map((feature) => (
-              <TabsTrigger
-                key={feature.id}
-                value={feature.id}
-                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground py-3 text-sm md:text-base font-medium transition-all"
-              >
-                {feature.title}
-              </TabsTrigger>
-            ))}
-          </TabsList>
+        <div className="space-y-32">
+          {features.map((feature, index) => (
+            <motion.div
+              key={feature.id}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, margin: "-100px" }}
+              className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                } items-center gap-16 lg:gap-24`}
+            >
+              {/* Text Content */}
+              <div className="flex-1 space-y-8 text-center lg:text-left">
+                <div className="inline-flex items-center justify-center p-3 rounded-full bg-primary/10 text-primary mb-4">
+                  <feature.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-4xl font-serif font-medium text-foreground">
+                  {feature.title}
+                </h3>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  {feature.description}
+                </p>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="text-sm font-semibold tracking-widest text-primary uppercase">
+                    {feature.value}
+                  </p>
+                </div>
+                <ul className="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
+                  {feature.integrations.map((item) => (
+                    <li key={item} className="px-4 py-1.5 rounded-full bg-secondary/50 text-secondary-foreground text-sm">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          {features.map((feature) => (
-            <TabsContent key={feature.id} value={feature.id}>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-              >
-                <Card className="bg-card border-white/5 shadow-2xl">
-                  <CardHeader>
-                    <div className="flex items-center gap-4 mb-2">
-                      <div className="p-3 bg-primary/10 rounded-lg">
-                        <feature.icon className="w-8 h-8 text-primary" />
-                      </div>
-                      <CardTitle className="text-3xl font-serif">{feature.title}</CardTitle>
-                    </div>
-                    <CardDescription className="text-lg text-muted-foreground/80">
-                      {feature.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-8">
-                    <div className="p-6 bg-background/50 rounded-lg border border-white/5">
-                      <h4 className="text-primary font-semibold mb-2 uppercase tracking-wide text-sm">Value Proposition</h4>
-                      <p className="text-xl text-foreground font-medium">{feature.value}</p>
-                    </div>
-
-                    <div>
-                      <h4 className="text-muted-foreground text-sm uppercase tracking-wide mb-4">Key Integrations & Compatibility</h4>
-                      <div className="flex flex-wrap gap-3">
-                        {feature.integrations.map((tech) => (
-                          <span key={tech} className="px-4 py-2 bg-white/5 rounded-full text-sm text-foreground/80 flex items-center gap-2">
-                            <Cloud size={14} /> {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <Button variant="outline" className="mt-4 gap-2 border-primary/30 hover:bg-primary/10 hover:text-primary text-foreground">
-                      <FileText size={16} /> Download AIOps Whitepaper
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </TabsContent>
+              {/* Image */}
+              <div className="flex-1 w-full relative group">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-2xl" />
+                <div className="overflow-hidden rounded-2xl shadow-2xl">
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                  />
+                </div>
+              </div>
+            </motion.div>
           ))}
-        </Tabs>
+        </div>
       </div>
     </section>
   );

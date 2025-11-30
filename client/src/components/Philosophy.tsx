@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
 import { Server, ShieldCheck, Activity } from "lucide-react";
 import systemDiagram from "@assets/generated_images/abstract_holographic_system_diagram_showing_data_flow_and_ai_processing..png";
+import { useLanguage } from "@/lib/i18n";
 
 const stats = [
-  { label: "Managed Cores", value: "500k+", icon: Server },
-  { label: "Incidents Resolved", value: "95%", icon: ShieldCheck },
-  { label: "Uptime Improvement", value: "+15%", icon: Activity },
+  { label: "cores", value: "500k+", icon: Server },
+  { label: "incidents", value: "95%", icon: ShieldCheck },
+  { label: "uptime", value: "+15%", icon: Activity },
 ];
 
 export default function Philosophy() {
+  const { t } = useLanguage();
+
   return (
     <section id="philosophy" className="py-24 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -21,13 +24,11 @@ export default function Philosophy() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
-              Beyond Automation: <br />
-              <span className="text-primary">The Power of AetherOps</span>
+              {t.philosophy.title} <br />
+              <span className="text-primary">{t.philosophy.title_highlight}</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              Traditional Remote Monitoring and Management (RMM) is reactive. AetherOps represents a paradigm shift to Autonomous Operations. 
-              Our advanced Machine Learning agents don't just alert you to problems; they detect anomalies before they become incidents and 
-              deploy autonomous remediation strategies instantly.
+              {t.philosophy.description}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
@@ -35,7 +36,9 @@ export default function Philosophy() {
                 <div key={index} className="flex flex-col items-start p-4 border-l border-primary/30">
                   <stat.icon className="w-8 h-8 text-primary mb-3" />
                   <span className="text-3xl font-bold text-foreground mb-1">{stat.value}</span>
-                  <span className="text-sm text-muted-foreground uppercase tracking-wider">{stat.label}</span>
+                  <span className="text-sm text-muted-foreground uppercase tracking-wider">
+                    {t.philosophy.stats[stat.label as keyof typeof t.philosophy.stats]}
+                  </span>
                 </div>
               ))}
             </div>
@@ -49,7 +52,7 @@ export default function Philosophy() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-             <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-30 pointer-events-none" />
+            <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-30 pointer-events-none" />
             <img
               src={systemDiagram}
               alt="AetherOps System Diagram"

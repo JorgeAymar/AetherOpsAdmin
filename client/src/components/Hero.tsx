@@ -1,17 +1,20 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroBg from "@assets/generated_images/futuristic_server_room_hero_background_with_abstract_ai_network_elements_in_matte_black_and_gold..png";
+import heroBg from "/Users/jorgesaymar/.gemini/antigravity/brain/2813f8d3-e116-4d97-8534-79654cf80bb9/hero_sailing_calm_1764513530227.png";
+import { useLanguage } from "@/lib/i18n";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-background/50 z-10" /> {/* Overlay */}
+        <div className="absolute inset-0 bg-background/30 z-10" /> {/* Lighter Overlay for calm vibe */}
         <motion.img
           src={heroBg}
-          alt="Futuristic Server Room"
+          alt="Digital Nomad Sailing"
           className="w-full h-full object-cover"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
@@ -22,22 +25,22 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-6 text-center">
         <motion.h1
-          className="text-5xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight"
+          className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Autonomous Infrastructure. <br />
-          <span className="text-primary">Predictive Correction.</span>
+          {t.hero.title} <br />
+          <span className="text-primary">{t.hero.title_highlight}</span>
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-sans"
+          className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 drop-shadow-md"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          AetherOps agents deliver AIOps for flawless VPS performance and zero-downtime operations.
+          {t.hero.subtitle}
         </motion.p>
 
         <motion.div
@@ -46,20 +49,20 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 h-auto w-full sm:w-auto"
             onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Get Started
+            {t.hero.cta_primary}
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          <Button
+            size="lg"
+            variant="outline"
             className="border-foreground text-foreground hover:bg-foreground hover:text-background text-lg px-8 py-6 h-auto w-full sm:w-auto transition-all"
             onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            View Pricing & Plans
+            {t.hero.cta_secondary}
           </Button>
         </motion.div>
       </div>

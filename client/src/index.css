@@ -28,58 +28,63 @@
 
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
-  
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
 }
 
 :root {
-  /* Matte Black #1C1C1C -> HSL(0, 0%, 11%) */
-  --background: 0 0% 11%;
-  /* Cream White #FFFEF7 -> HSL(48, 100%, 98%) */
-  --foreground: 48 100% 98%;
-  
-  /* Card Background - slightly lighter than bg */
-  --card: 0 0% 14%;
-  --card-foreground: 48 100% 98%;
-  
-  --popover: 0 0% 14%;
-  --popover-foreground: 48 100% 98%;
-  
-  /* Soft Gold #D4AF37 -> HSL(46, 66%, 52%) */
-  --primary: 46 66% 52%;
-  --primary-foreground: 0 0% 11%;
-  
-  /* Deep Teal #004D40 -> HSL(170, 100%, 15%) */
-  --secondary: 170 100% 15%;
-  --secondary-foreground: 48 100% 98%;
-  
-  --muted: 0 0% 20%;
-  --muted-foreground: 0 0% 70%;
-  
-  --accent: 170 100% 15%;
-  --accent-foreground: 48 100% 98%;
-  
-  --destructive: 0 62% 30%;
-  --destructive-foreground: 48 100% 98%;
+  /* Sky Blue / Warm White Background */
+  --background: 210 40% 96%;
+  /* Very light blue-grey/white */
+  --foreground: 220 40% 10%;
+  /* Deep Navy for text */
 
-  --border: 0 0% 25%;
-  --input: 0 0% 25%;
-  --ring: 46 66% 52%;
-  
-  --gold: 46 66% 52%;
-  --teal: 170 100% 15%;
+  /* Card / Surface - White with slight warmth */
+  --card: 0 0% 100%;
+  --card-foreground: 220 40% 10%;
 
-  --radius: 0.25rem;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 40% 10%;
+
+  /* Primary - Calm Teal (Keep from Hero) */
+  --primary: 180 60% 45%;
+  /* Slightly darker for contrast on light bg */
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary - Warm Coral (Keep from Hero) */
+  --secondary: 20 70% 60%;
+  --secondary-foreground: 0 0% 100%;
+
+  /* Muted - Sand / Light Grey */
+  --muted: 220 14% 90%;
+  --muted-foreground: 220 20% 40%;
+
+  --accent: 180 60% 45%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 220 14% 90%;
+  --input: 220 14% 90%;
+  --ring: 180 60% 45%;
+
+  --radius: 0.75rem;
 }
 
 body {
   @apply font-sans antialiased bg-background text-foreground selection:bg-primary/30 selection:text-foreground;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  @apply font-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-sans;
 }
 
 /* Smooth scrolling */
