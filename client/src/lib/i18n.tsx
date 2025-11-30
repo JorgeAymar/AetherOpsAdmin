@@ -135,7 +135,7 @@ const translations: Record<Language, Translations> = {
         hero: {
             title: "Manage your VPS services",
             title_highlight: "without being present.",
-            subtitle: "Your AI crew handles the details. Enjoy the freedom of autonomous infrastructure with built-in best practices and auto-documentation.",
+            subtitle: "Your AI crew handles your Linux Ubuntu servers. No SysAdmin needed. Enjoy the freedom of autonomous infrastructure with built-in best practices.",
             cta_primary: "Get Started",
             cta_secondary: "View Pricing & Plans",
         },
@@ -165,7 +165,7 @@ const translations: Record<Language, Translations> = {
                 },
                 freedom: {
                     title: "True Freedom",
-                    description: "The ultimate luxury is time. Disconnect completely, knowing your systems are self-healing and self-documenting.",
+                    description: "The ultimate luxury is time. Disconnect completely, knowing your Ubuntu systems are self-healing and self-documenting.",
                     value: "Life Benefit: Work from anywhere, or nowhere.",
                 },
                 clarity: {
@@ -272,7 +272,7 @@ const translations: Record<Language, Translations> = {
         hero: {
             title: "Gestiona tus servicios VPS",
             title_highlight: "sin estar presente.",
-            subtitle: "Tu equipo de IA se encarga de los detalles. Disfruta de la libertad de una infraestructura autónoma con mejores prácticas integradas y documentación automática.",
+            subtitle: "Tu equipo de IA gestiona tus servidores Linux Ubuntu. No necesitas SysAdmin. Disfruta de la libertad de una infraestructura autónoma.",
             cta_primary: "Empezar",
             cta_secondary: "Ver Precios y Planes",
         },
@@ -302,7 +302,7 @@ const translations: Record<Language, Translations> = {
                 },
                 freedom: {
                     title: "Verdadera Libertad",
-                    description: "El lujo definitivo es el tiempo. Desconéctate completamente, sabiendo que tus sistemas se auto-reparan y auto-documentan.",
+                    description: "El lujo definitivo es el tiempo. Desconéctate completamente, sabiendo que tus sistemas Ubuntu se auto-reparan.",
                     value: "Beneficio de Vida: Trabaja desde cualquier lugar, o ninguno.",
                 },
                 clarity: {
@@ -409,7 +409,7 @@ const translations: Record<Language, Translations> = {
         hero: {
             title: "Gerencie seus serviços VPS",
             title_highlight: "sem estar presente.",
-            subtitle: "Sua equipe de IA cuida dos detalhes. Aproveite a liberdade de uma infraestrutura autônoma com melhores práticas integradas e documentação automática.",
+            subtitle: "Sua equipe de IA cuida dos seus servidores Linux Ubuntu. Sem SysAdmin. Aproveite a liberdade de uma infraestrutura autônoma.",
             cta_primary: "Começar",
             cta_secondary: "Ver Preços e Planos",
         },
@@ -439,7 +439,7 @@ const translations: Record<Language, Translations> = {
                 },
                 freedom: {
                     title: "Verdadeira Liberdade",
-                    description: "O luxo definitivo é o tempo. Desconecte-se completamente, sabendo que seus sistemas se auto-reparan y auto-documentam.",
+                    description: "O luxo definitivo é o tempo. Desconecte-se completamente, sabendo que seus sistemas Ubuntu se auto-reparan.",
                     value: "Benefício de Vida: Trabalhe de qualquer lugar, ou de lugar nenhum.",
                 },
                 clarity: {
@@ -546,7 +546,7 @@ const translations: Record<Language, Translations> = {
         hero: {
             title: "Gérez vos services VPS",
             title_highlight: "sans être présent.",
-            subtitle: "Votre équipe d'IA gère les détails. Profitez de la liberté d'une infrastructure autonome avec les meilleures pratiques intégrées et une documentation automatique.",
+            subtitle: "Votre équipe d'IA gère vos serveurs Linux Ubuntu. Pas besoin d'administrateur. Profitez de la liberté d'une infrastructure autonome.",
             cta_primary: "Commencer",
             cta_secondary: "Voir Prix et Plans",
         },
@@ -576,7 +576,7 @@ const translations: Record<Language, Translations> = {
                 },
                 freedom: {
                     title: "Vraie Liberté",
-                    description: "Le luxe ultime est le temps. Déconnectez-vous complètement, sachant que vos systèmes s'auto-réparent et s'auto-documentent.",
+                    description: "Le luxe ultime est le temps. Déconnectez-vous complètement, sachant que vos systèmes Ubuntu s'auto-réparent.",
                     value: "Avantage Vie: Travaillez de n'importe où, ou de nulle part.",
                 },
                 clarity: {

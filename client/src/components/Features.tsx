@@ -122,7 +122,7 @@ export default function Features() {
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-full h-[500px] object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                    className="w-full h-[350px] object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
                   />
                 </div>
               </div>

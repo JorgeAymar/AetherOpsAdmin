@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Server, ShieldCheck, Activity } from "lucide-react";
-import systemDiagram from "@assets/generated_images/abstract_holographic_system_diagram_showing_data_flow_and_ai_processing..png";
+import ZenSystemVisual from "./ZenSystemVisual";
 import { useLanguage } from "@/lib/i18n";
 
 const stats = [
@@ -53,11 +53,7 @@ export default function Philosophy() {
             className="relative"
           >
             <div className="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-30 pointer-events-none" />
-            <img
-              src={systemDiagram}
-              alt="AetherOps System Diagram"
-              className="rounded-lg shadow-2xl border border-white/10 relative z-10 w-full hover:scale-[1.02] transition-transform duration-500"
-            />
+            <ZenSystemVisual />
           </motion.div>
         </div>
       </div>

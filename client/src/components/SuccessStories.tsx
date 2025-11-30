@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ZoomIn } from "lucide-react";
-import dashboardImg from "@assets/generated_images/high-fidelity_aiops_dashboard_interface_screenshot_in_dark_mode..png";
-import secureNetImg from "@assets/generated_images/abstract_representation_of_a_secure_network_with_cybersecurity_elements..png";
-import systemImg from "@assets/generated_images/abstract_holographic_system_diagram_showing_data_flow_and_ai_processing..png";
+import dashboardImg from "@/assets/images/dashboard_hud.jpg";
+import secureNetImg from "@/assets/images/security_shield.jpg";
+import systemImg from "@/assets/images/network_flow.jpg";
 import { useLanguage } from "@/lib/i18n";
 
 export default function SuccessStories() {
